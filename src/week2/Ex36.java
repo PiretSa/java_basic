@@ -10,6 +10,8 @@ public class Ex36 {
         int number;
         int sum = 0;
         int count = 0;
+        int even = 0;
+        int odd = 0;
 
         while (true) {
             number = Integer.parseInt(reader.nextLine());
@@ -19,11 +21,18 @@ public class Ex36 {
             }
             sum += number;
             count++;
+             if(number % 2 == 0){
+                 even++;
+             } else {
+                 odd++;
+             }
         }
         System.out.println("Sum of numbers is: " + sum);
         System.out.println("How many numbers you typed: " + count);
         System.out.println("Average of the numbers is " + (double)sum / count);
-        System.out.println("Thank you and see you later");
+        System.out.println("Even numbers count: " + even);
+        System.out.println("Odd numbers count: " + odd);
+        System.out.println("Thank you and see you later!");
 
     }
 }
