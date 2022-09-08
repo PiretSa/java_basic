@@ -22,6 +22,7 @@ public class Ex36 {
         }
         System.out.println("Sum of numbers is: " + sum);
         System.out.println("How many numbers you typed: " + count);
+        System.out.println("Average of the numbers is " + (double)sum / count);
         System.out.println("Thank you and see you later");
 
     }
