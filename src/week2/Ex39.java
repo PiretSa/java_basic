@@ -21,6 +21,7 @@ public class Ex39 {
         }
     }
 
+
     private static void printRectangle(int width, int height){
         int row = 1;
         while(row <= height){
@@ -34,7 +35,20 @@ public class Ex39 {
         }
     }
 
+    private static void printTriangle(int size){
+        int row = 1;
+        while(row <= size){
+            int field = 1;
+            while(field <= row){
+                System.out.print("* ");
+                field++;
+            }
+            System.out.println();
+            row++;
+        }
+    }
+
     public static void main(String[] args) {
-        printRectangle(17,3);
+        printTriangle(4);
     }
 }
