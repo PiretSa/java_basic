@@ -9,6 +9,7 @@ public class Ex36 {
 
         int number;
         int sum = 0;
+        int count = 0;
 
         while (true) {
             number = Integer.parseInt(reader.nextLine());
@@ -17,8 +18,10 @@ public class Ex36 {
                 break;  // end the loop
             }
             sum += number;
+            count++;
         }
         System.out.println("Sum of numbers is: " + sum);
+        System.out.println("How many numbers you typed: " + count);
         System.out.println("Thank you and see you later");
 
     }
