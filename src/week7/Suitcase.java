@@ -29,6 +29,7 @@ public class Suitcase {
         if(weightCurrent == 0) {
             return "empty (" + weightCurrent + " kg)";
         }
-        return this.things.size() + " things (" + weightCurrent + " kg)";
+        String langControl = (this.things.size() > 1) ? "things" : "thing";
+        return this.things.size() + langControl + " things (" + weightCurrent + " kg)";
     }
 }
